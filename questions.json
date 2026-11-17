@@ -43,5 +43,35 @@
       "2": "SATA connects storage drives.",
       "3": "USB 1.1 is a slow peripheral bus, not primarily for displays (though DisplayPort alt mode exists on later USB)."
     }
+  },
+  {
+    "id": 4,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which of the following is used to register inputs on a touch-screen monitor?",
+    "options": ["Inverter", "Digitizer", "OLED", "LCD"],
+    "correct": [1],
+    "explanation": "The digitizer is the component that detects and converts touch inputs into digital signals. Inverter is for backlight power in older LCDs, OLED/LCD are display technologies.",
+    "wrongExplanations": {
+      "0": "An inverter converts DC to AC for CCFL backlights.",
+      "2": "OLED is a display panel technology, not the touch sensor.",
+      "3": "LCD is the display panel type."
+    }
+  },
+  {
+    "id": 5,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "A financial organization wants to establish an exclusive cloud instance. Which of the following cloud models should the organization adopt?",
+    "options": ["Hybrid", "Community", "Private", "Public"],
+    "correct": [2],
+    "explanation": "A private cloud is dedicated to a single organization, providing exclusive control and security. Hybrid mixes private/public, community is shared by multiple organizations with common concerns, public is multi-tenant shared.",
+    "wrongExplanations": {
+      "0": "Hybrid combines private and public clouds.",
+      "1": "Community cloud is shared among organizations with similar requirements.",
+      "3": "Public cloud is shared among many tenants (e.g., AWS, Azure)."
+    }
   }
 ]
