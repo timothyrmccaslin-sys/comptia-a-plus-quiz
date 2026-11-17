@@ -5,24 +5,30 @@ let answered = JSON.parse(localStorage.getItem('aplus-answered') || '{}');
 let correctCount = Object.values(answered).filter(a => a.correct).length;
 let totalAnswered = Object.keys(answered).length;
 
+const TOPIC_FILES = [
+  'questions/hardware.json',
+  'questions/networking.json',
+  'questions/operating-systems.json',
+  'questions/security.json'
+];
+
 async function init() {
   try {
-    const res = await fetch('questions.json');
-    questions = await res.json();
+    const results = await Promise.all(TOPIC_FILES.map(f => fetch(f).then(r => r.json())));
+    questions = results.flat();
     filtered = [...questions];
     shuffle(filtered);
     render();
     updateStats();
   } catch (e) {
+    console.error(e);
     document.getElementById('question-area').innerHTML = '<p>Failed to load questions. Check your connection or try refreshing.</p>';
   }
 
-  // Register service worker
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
 
-  // Filters
   document.getElementById('filters').addEventListener('click', e => {
     if (e.target.tagName !== 'BUTTON') return;
     document.querySelectorAll('#filters button').forEach(b => b.classList.remove('active'));
@@ -99,11 +105,11 @@ function render() {
   } else if (q.type === 'dragdrop') {
     html += '<p>Drag the items into the correct order/targets:</p>';
     html += '<div class="drag-area" id="drag-items">';
-    q.items.forEach((item, i) => {
+    (q.items || []).forEach((item, i) => {
       html += `<div class="draggable" draggable="true" data-index="${i}">${item}</div>`;
     });
     html += '</div><div id="drop-targets" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;">';
-    q.targets.forEach((t, i) => {
+    (q.targets || []).forEach((t, i) => {
       html += `<div class="drop-target" data-index="${i}">${t}</div>`;
     });
     html += '</div>';
@@ -114,7 +120,6 @@ function render() {
 
   area.innerHTML = html;
 
-  // Event listeners for interaction
   if (q.type === 'mcq') {
     area.querySelectorAll('.option').forEach(el => {
       el.addEventListener('click', () => {
@@ -127,12 +132,14 @@ function render() {
     setupDragDrop();
   } else if (q.type === 'simulation') {
     const input = document.getElementById('cli-input');
-    input.addEventListener('input', () => {
-      document.getElementById('submit').disabled = !input.value.trim();
-    });
-    input.addEventListener('keypress', e => {
-      if (e.key === 'Enter') submitAnswer();
-    });
+    if (input) {
+      input.addEventListener('input', () => {
+        document.getElementById('submit').disabled = !input.value.trim();
+      });
+      input.addEventListener('keypress', e => {
+        if (e.key === 'Enter') submitAnswer();
+      });
+    }
   }
 }
 
@@ -161,15 +168,17 @@ function setupDragDrop() {
     });
   });
 
-  // Also allow dropping back to items area
-  document.getElementById('drag-items').addEventListener('dragover', e => e.preventDefault());
-  document.getElementById('drag-items').addEventListener('drop', e => {
-    e.preventDefault();
-    const index = e.dataTransfer.getData('text/plain');
-    const item = document.querySelector(`.draggable[data-index="${index}"]`);
-    if (item) document.getElementById('drag-items').appendChild(item);
-    checkDragComplete();
-  });
+  const dragArea = document.getElementById('drag-items');
+  if (dragArea) {
+    dragArea.addEventListener('dragover', e => e.preventDefault());
+    dragArea.addEventListener('drop', e => {
+      e.preventDefault();
+      const index = e.dataTransfer.getData('text/plain');
+      const item = document.querySelector(`.draggable[data-index="${index}"]`);
+      if (item) dragArea.appendChild(item);
+      checkDragComplete();
+    });
+  }
 }
 
 function checkDragComplete() {
@@ -198,28 +207,28 @@ function submitAnswer() {
       const item = t.querySelector('.draggable');
       mapping[i] = item ? parseInt(item.dataset.index) : -1;
     });
-    isCorrect = mapping.every((m, i) => m === q.correctMapping[i]);
+    isCorrect = mapping.every((m, i) => m === (q.correctMapping || [])[i]);
     userAnswer = mapping;
   } else if (q.type === 'simulation') {
-    const input = document.getElementById('cli-input').value.trim().toLowerCase();
-    userAnswer = input;
-    isCorrect = q.accepted.some(a => a.toLowerCase() === input);
+    const input = document.getElementById('cli-input');
+    const val = input ? input.value.trim().toLowerCase() : '';
+    userAnswer = val;
+    isCorrect = (q.accepted || []).some(a => a.toLowerCase() === val);
   }
 
-  // Feedback
   const feedback = document.getElementById('feedback');
   feedback.classList.remove('hidden', 'correct', 'incorrect');
   feedback.classList.add(isCorrect ? 'correct' : 'incorrect');
 
   let fb = `<h3>${isCorrect ? '✓ Correct!' : '✗ Incorrect'}</h3>`;
-  fb += `<p><strong>Explanation:</strong> ${q.explanation}</p>`;
+  fb += `<p><strong>Explanation:</strong> ${q.explanation || 'See correct answer above.'}</p>`;
 
   if (!isCorrect && q.type === 'mcq' && q.wrongExplanations && q.wrongExplanations[userAnswer]) {
     fb += `<div class="explanation-detail"><strong>Why your answer is wrong:</strong> ${q.wrongExplanations[userAnswer]}</div>`;
   }
-  if (q.type === 'mcq') {
+  if (q.type === 'mcq' && q.wrongExplanations) {
     q.options.forEach((opt, i) => {
-      if (!q.correct.includes(i) && q.wrongExplanations && q.wrongExplanations[i]) {
+      if (!q.correct.includes(i) && q.wrongExplanations[i]) {
         fb += `<div class="explanation-detail"><strong>${String.fromCharCode(65 + i)} is wrong:</strong> ${q.wrongExplanations[i]}</div>`;
       }
     });
@@ -227,7 +236,6 @@ function submitAnswer() {
 
   feedback.innerHTML = fb;
 
-  // Save progress
   if (!answered[q.id]) {
     totalAnswered++;
     if (isCorrect) correctCount++;
