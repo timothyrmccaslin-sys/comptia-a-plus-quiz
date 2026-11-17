@@ -1,0 +1,5766 @@
+[
+  {
+    "id": 5,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "A financial organization wants to establish an exclusive cloud instance. Which of the following cloud models should the organization adopt?",
+    "options": [
+      "Hybrid",
+      "Community",
+      "Private",
+      "Public"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A private cloud is dedicated to a single organization, providing exclusive control and security. Hybrid mixes private/public, community is shared by multiple organizations with common concerns, public is multi-tenant shared.",
+    "wrongExplanations": {
+      "0": "Hybrid combines private and public clouds.",
+      "1": "Community cloud is shared among organizations with similar requirements.",
+      "3": "Public cloud is shared among many tenants (e.g., AWS, Azure)."
+    }
+  },
+  {
+    "id": 12,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "A technician is configuring firewall rules and needs to allow outbound POP3 traffic for email retrieval. Which port must be permitted?",
+    "options": [
+      "25",
+      "110",
+      "143",
+      "587"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "POP3 uses TCP port 110 for email retrieval. Port 25 is SMTP, 143 is IMAP, 587 is submission (authenticated SMTP).",
+    "wrongExplanations": {
+      "0": "Port 25 is SMTP for sending mail.",
+      "2": "Port 143 is IMAP.",
+      "3": "Port 587 is for authenticated email submission."
+    }
+  },
+  {
+    "id": 16,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "2",
+    "question": "What is the purpose of configuring alternate IP settings on a Windows 10 laptop's network adapter?",
+    "options": [
+      "To enable the use of two IP addresses simultaneously",
+      "To provide a static IP fallback when DHCP is not available",
+      "To configure a secondary DNS server",
+      "To set up a teamed network connection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Alternate Configuration allows a static IP to be used automatically when DHCP is unavailable, useful for laptops that move between networks.",
+    "wrongExplanations": {
+      "0": "Multiple simultaneous IPs require additional configuration beyond alternate.",
+      "2": "Secondary DNS is set in the main TCP/IP properties.",
+      "3": "Teaming is NIC teaming for bandwidth/redundancy."
+    }
+  },
+  {
+    "id": 19,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which port does RDP use?",
+    "options": [
+      "22",
+      "80",
+      "3389",
+      "443"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Remote Desktop Protocol (RDP) uses TCP port 3389 by default. 22 is SSH, 80 is HTTP, 443 is HTTPS.",
+    "wrongExplanations": {
+      "0": "Port 22 is SSH.",
+      "1": "Port 80 is HTTP.",
+      "3": "Port 443 is HTTPS."
+    }
+  },
+  {
+    "id": 20,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "A user's PC has an IP address of 169.254.x.x and no internet. What is the most likely cause?",
+    "options": [
+      "Incorrect subnet mask",
+      "No DHCP lease obtained",
+      "DNS server failure",
+      "Firewall blocking traffic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "169.254.x.x is an APIPA (Automatic Private IP Addressing) address assigned when a device cannot obtain a DHCP lease. The system has no valid network configuration for internet access.",
+    "wrongExplanations": {
+      "0": "Subnet mask issues would still allow a proper IP if DHCP worked.",
+      "2": "DNS failure would still allow IP-based connectivity.",
+      "3": "Firewall blocks specific traffic but doesn't cause APIPA."
+    }
+  },
+  {
+    "id": 21,
+    "type": "dragdrop",
+    "category": "Networking",
+    "core": "1",
+    "question": "Match each protocol to its default port number.",
+    "items": [
+      "HTTP",
+      "HTTPS",
+      "SSH",
+      "RDP",
+      "DNS",
+      "SMTP"
+    ],
+    "targets": [
+      "80",
+      "443",
+      "22",
+      "3389",
+      "53",
+      "25"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Standard well-known ports: HTTP 80, HTTPS 443, SSH 22, RDP 3389, DNS 53, SMTP 25.",
+    "wrongExplanations": {}
+  },
+  {
+    "id": 23,
+    "type": "simulation",
+    "category": "Networking",
+    "core": "1",
+    "question": "A user cannot access the internet. The PC has an IP of 169.254.10.5. What command should you run first to attempt to obtain a valid IP address?",
+    "simulationType": "cli",
+    "prompt": "C:\\>",
+    "correctCommand": "ipconfig /renew",
+    "accepted": [
+      "ipconfig /renew",
+      "ipconfig /release",
+      "ipconfig /renew *"
+    ],
+    "explanation": "ipconfig /renew forces the client to request a new DHCP lease. If that fails, you would check physical connectivity, the DHCP server, or assign a static IP temporarily.",
+    "wrongExplanations": {
+      "ipconfig /all": "Shows current configuration but doesn't request a new lease.",
+      "ping 8.8.8.8": "Tests connectivity but won't fix a missing DHCP lease.",
+      "netsh winsock reset": "Resets the network stack, more drastic than needed first."
+    }
+  },
+  {
+    "id": 34,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 35,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 54,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 69,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 70,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 72,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 73,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 74,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 75,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 80,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 85,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 86,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 90,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 94,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 96,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 99,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 102,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 103,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 108,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 112,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 113,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 114,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 115,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 116,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 118,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 120,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 123,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 125,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 126,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 128,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 129,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 131,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 137,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 144,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 147,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 149,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 150,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 151,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 156,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 157,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 161,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 171,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 172,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 184,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 185,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 190,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 191,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 197,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 206,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 211,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 213,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 224,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 233,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 237,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 239,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 244,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 245,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 251,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 252,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 258,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 260,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 264,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 274,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 275,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 276,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 278,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 282,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 283,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 291,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 293,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 299,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 303,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 310,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 312,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 322,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 325,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 326,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 330,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 340,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 343,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 344,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 354,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 357,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 360,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 361,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 363,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 364,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 370,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 372,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 375,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 383,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 385,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 389,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 396,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 397,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 401,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 404,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 416,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 419,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 423,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 424,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 435,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 436,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 437,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 438,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 443,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 449,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 453,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 454,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 456,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 465,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 469,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 470,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 475,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 485,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 492,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 493,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 494,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 498,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 500,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 512,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 517,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 519,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 521,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 522,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 528,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 529,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 532,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 535,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 537,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 539,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 548,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 549,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 550,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 551,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 552,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 554,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 559,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 560,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 562,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 566,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 572,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 573,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 574,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 579,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 583,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 585,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 589,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 598,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 603,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 604,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 605,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 611,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 613,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 614,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 617,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 622,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 624,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 625,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 632,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 633,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 637,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 644,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 652,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 657,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 660,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 668,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 669,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 676,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 679,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 681,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 688,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 691,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 693,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 694,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 712,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 718,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 720,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 724,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 725,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 728,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 729,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 733,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 735,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 736,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 739,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 742,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 743,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 746,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 747,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 749,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 750,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 752,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 754,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 761,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 763,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 771,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 772,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 777,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 780,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 781,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 790,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 796,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 800,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 809,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 813,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 816,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 818,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 838,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 842,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 843,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 844,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What of the following describes the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 850,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 852,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 855,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 860,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 869,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 871,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 880,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 882,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 893,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 899,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 900,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 901,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 902,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 903,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 909,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 910,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 916,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 917,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 918,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 929,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 931,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 939,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 941,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 944,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 947,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 954,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 957,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 958,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 963,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 967,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 968,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 977,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 979,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What does a subnet mask of 255.255.255.192 provide?",
+    "options": [
+      "64 addresses",
+      "128 addresses",
+      "256 addresses",
+      "512 addresses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is 64 addresses. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "128 addresses is not the appropriate choice in this context.",
+      "2": "256 addresses is not the appropriate choice in this context.",
+      "3": "512 addresses is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 981,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What is the purpose of NAT?",
+    "options": [
+      "To translate private IP addresses to public ones",
+      "To encrypt traffic",
+      "To assign MAC addresses",
+      "To filter malware"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is To translate private IP addresses to public ones. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "1": "To encrypt traffic is not the appropriate choice in this context.",
+      "2": "To assign MAC addresses is not the appropriate choice in this context.",
+      "3": "To filter malware is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 983,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 987,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ARP. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "DNS is not the appropriate choice in this context.",
+      "1": "DHCP is not the appropriate choice in this context.",
+      "3": "ICMP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 991,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "What wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 996,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which OSI layer is responsible for routing packets between networks?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is Layer 3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "Layer 2 is not the appropriate choice in this context.",
+      "2": "Layer 4 is not the appropriate choice in this context.",
+      "3": "Layer 7 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 999,
+    "type": "mcq",
+    "category": "Networking",
+    "core": "1",
+    "question": "Which wireless security protocol is currently recommended for new networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct answer is WPA3. This aligns with CompTIA A+ objectives for Networking.",
+    "wrongExplanations": {
+      "0": "WEP is not the appropriate choice in this context.",
+      "1": "WPA is not the appropriate choice in this context.",
+      "2": "WPA2 is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 1003,
+    "type": "dragdrop",
+    "category": "Networking",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1006,
+    "type": "dragdrop",
+    "category": "Networking",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1007,
+    "type": "dragdrop",
+    "category": "Networking",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  }
+]

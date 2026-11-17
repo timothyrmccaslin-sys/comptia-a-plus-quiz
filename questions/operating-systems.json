@@ -1,0 +1,5164 @@
+[
+  {
+    "id": 14,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "A Windows PC showed a full-screen stop error and restarted before the user could note the stop code. Where can the technician find the code?",
+    "options": [
+      "Device Manager",
+      "Task Manager's Startup tab",
+      "The System log in Event Viewer",
+      "The boot order menu in UEFI firmware setup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BugCheck events with stop codes are logged in the System log of Event Viewer. Device Manager shows hardware, Task Manager Startup manages apps, UEFI boot menu selects devices.",
+    "wrongExplanations": {
+      "0": "Device Manager lists hardware devices and drivers.",
+      "1": "Startup tab manages programs that launch at boot.",
+      "3": "UEFI setup controls boot order and firmware settings."
+    }
+  },
+  {
+    "id": 22,
+    "type": "dragdrop",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Order the CompTIA recommended malware removal process steps correctly.",
+    "items": [
+      "Quarantine the infected systems",
+      "Identify and research malware symptoms",
+      "Remediate the infected systems",
+      "Schedule scans and run updates",
+      "Educate the end user",
+      "Enable System Restore and create a restore point",
+      "Disable System Restore"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4",
+      "Step 5",
+      "Step 6",
+      "Step 7"
+    ],
+    "correctMapping": [
+      1,
+      0,
+      2,
+      3,
+      4,
+      6,
+      5
+    ],
+    "explanation": "The standard 7-step process is: 1. Identify and research symptoms, 2. Quarantine, 3. Disable System Restore, 4. Remediate, 5. Schedule scans/updates, 6. Enable System Restore and create point, 7. Educate the user.",
+    "wrongExplanations": {}
+  },
+  {
+    "id": 25,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which command repairs corrupted Windows system files?",
+    "options": [
+      "chkdsk /f",
+      "sfc /scannow",
+      "diskpart",
+      "format c:"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "sfc /scannow (System File Checker) scans and repairs protected Windows system files. If SFC cannot repair them, DISM /Online /Cleanup-Image /RestoreHealth is the next step.",
+    "wrongExplanations": {
+      "0": "chkdsk checks and repairs the file system and disk surface.",
+      "2": "diskpart is for disk partitioning.",
+      "3": "format erases the drive."
+    }
+  },
+  {
+    "id": 28,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which account type should be used for a user who needs to run applications normally but must not install software?",
+    "options": [
+      "Administrator",
+      "Standard user",
+      "Guest",
+      "Power User"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A standard user account follows the principle of least privilege. It can run most applications but cannot install software or change system settings without elevation.",
+    "wrongExplanations": {
+      "0": "Administrator has full control and can install software.",
+      "2": "Guest is more restricted and typically disabled.",
+      "3": "Power User is a legacy group with elevated rights."
+    }
+  },
+  {
+    "id": 29,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which backup type copies only the files that have changed since the last full backup and continues to grow until the next full backup?",
+    "options": [
+      "Full",
+      "Incremental",
+      "Differential",
+      "Synthetic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Differential backups copy all changes since the last full backup. Each differential is larger than the previous one until the next full. Incremental only copies changes since the last backup of any type.",
+    "wrongExplanations": {
+      "0": "Full copies everything every time.",
+      "1": "Incremental copies only changes since the last incremental or full.",
+      "3": "Synthetic is a generated full backup from existing backups."
+    }
+  },
+  {
+    "id": 33,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 41,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 42,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 43,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 44,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 48,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 51,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 53,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 57,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 58,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 64,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 65,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 68,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 76,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 78,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 81,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 82,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 87,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 92,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 98,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 107,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 110,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 117,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 119,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 121,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 122,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 124,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 127,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 130,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 139,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 140,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 141,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 145,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 148,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 154,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 155,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 163,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 165,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 177,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 179,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 182,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 186,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 187,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 188,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 192,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 201,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 202,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 203,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 204,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 208,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 209,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 214,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 218,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 220,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 228,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 229,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 236,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 238,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 240,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 248,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 270,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 281,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 288,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 294,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 306,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 307,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 308,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 317,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 319,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 321,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 323,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 328,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 333,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 336,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 338,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 350,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 366,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 367,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 379,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 382,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 386,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 388,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 391,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 393,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 399,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 403,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 410,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 411,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 412,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 417,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 430,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 431,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 432,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 434,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 444,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 446,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 452,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 457,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 458,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 459,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 462,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 466,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 473,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 479,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 481,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 488,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 496,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 499,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 502,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 503,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 504,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 506,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 520,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 523,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 524,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 525,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 536,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 538,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 543,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 544,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 545,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 546,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 547,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 553,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 556,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 569,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 571,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 576,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 578,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 586,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 592,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 594,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 608,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 610,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 616,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 621,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 629,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 634,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 635,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 640,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 642,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 645,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 646,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 647,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 648,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 650,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 655,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 661,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 662,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 663,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 666,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 674,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 680,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 684,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 685,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 687,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 689,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 690,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 692,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 697,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 701,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 708,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 715,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 717,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 719,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 722,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 726,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 738,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 744,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 748,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 756,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 758,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 759,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 760,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 762,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 767,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 770,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 778,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 784,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 786,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 788,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 795,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 797,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 798,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 799,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 801,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 803,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 807,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 814,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 821,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 822,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 825,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 828,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 831,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 841,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 848,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 854,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 857,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 863,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 865,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What of the following describes the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 870,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 878,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 883,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 887,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 892,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 898,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 905,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 907,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 908,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 911,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 914,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which file system supports permissions and is used by modern Linux distributions?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is ext4. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "FAT32 is not the appropriate choice in this context.",
+      "1": "NTFS is not the appropriate choice in this context.",
+      "3": "exFAT is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 915,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 923,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 924,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 925,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 930,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 942,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 945,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 955,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 962,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 965,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What is the purpose of the Windows Registry?",
+    "options": [
+      "Store configuration settings for the OS and applications",
+      "Manage user passwords",
+      "Store temporary files",
+      "Control hardware interrupts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Store configuration settings for the OS and applications. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Manage user passwords is not the appropriate choice in this context.",
+      "2": "Store temporary files is not the appropriate choice in this context.",
+      "3": "Control hardware interrupts is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 966,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 971,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 973,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 976,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Linux command is used to view the contents of a file?",
+    "options": [
+      "cat",
+      "type",
+      "view",
+      "open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is cat. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "type is not the appropriate choice in this context.",
+      "2": "view is not the appropriate choice in this context.",
+      "3": "open is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 980,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 982,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 986,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "What command displays the current directory contents in Windows Command Prompt?",
+    "options": [
+      "ls",
+      "dir",
+      "list",
+      "show"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is dir. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "0": "ls is not the appropriate choice in this context.",
+      "2": "list is not the appropriate choice in this context.",
+      "3": "show is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 998,
+    "type": "mcq",
+    "category": "Operating Systems",
+    "core": "2",
+    "question": "Which Windows feature allows remote desktop access?",
+    "options": [
+      "Remote Desktop Protocol",
+      "Telnet",
+      "SSH",
+      "FTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Remote Desktop Protocol. This aligns with CompTIA A+ objectives for Operating Systems.",
+    "wrongExplanations": {
+      "1": "Telnet is not the appropriate choice in this context.",
+      "2": "SSH is not the appropriate choice in this context.",
+      "3": "FTP is not the appropriate choice in this context."
+    }
+  }
+]

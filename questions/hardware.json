@@ -1,1 +1,5202 @@
-[{"id":1,"type":"mcq","category":"Hardware","core":"1","question":"Which of the following would be the best technology for a device to wirelessly connect to a speaker?","options":["Wi-Fi","NFC","5G","Bluetooth"],"correct":[3],"explanation":"Bluetooth is the standard short-range wireless technology designed for connecting peripherals like speakers, headphones, and keyboards. Wi-Fi is for higher bandwidth networking, NFC is for very close proximity data exchange (like payments), and 5G is a cellular standard for wide-area mobile connectivity.","wrongExplanations":{"0":"Wi-Fi is used for network connectivity, not typically for direct speaker pairing in this context.","1":"NFC has a range of only a few centimeters and is not suitable for continuous audio streaming.","2":"5G is a cellular technology for internet connectivity over long distances, not local device pairing."}}]
+[
+  {
+    "id": 1,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which of the following would be the best technology for a device to wirelessly connect to a speaker?",
+    "options": [
+      "Wi-Fi",
+      "NFC",
+      "5G",
+      "Bluetooth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bluetooth is the standard short-range wireless technology designed for connecting peripherals like speakers, headphones, and keyboards. Wi-Fi is for higher bandwidth networking, NFC is for very close proximity data exchange (like payments), and 5G is a cellular standard for wide-area mobile connectivity.",
+    "wrongExplanations": {
+      "0": "Wi-Fi is used for network connectivity, not typically for direct speaker pairing in this context.",
+      "1": "NFC has a range of only a few centimeters and is not suitable for continuous audio streaming.",
+      "2": "5G is a cellular technology for internet connectivity over long distances, not local device pairing."
+    }
+  },
+  {
+    "id": 2,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A technician needs to install the appropriate RAM for a performance-intensive gaming desktop computer. Which of the following technologies will the technician most likely select?",
+    "options": [
+      "Non-ECC",
+      "Single channel",
+      "Registered",
+      "DDR5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DDR5 is the current generation of high-speed desktop memory offering higher bandwidth and capacity, ideal for gaming. Non-ECC is common but not the differentiator; single channel is slower; Registered (RDIMM) is for servers.",
+    "wrongExplanations": {
+      "0": "Non-ECC is standard for desktops but doesn't specify the speed/generation needed for performance.",
+      "1": "Single channel reduces bandwidth compared to dual/quad channel.",
+      "2": "Registered memory is buffered and used in servers, not typical gaming desktops."
+    }
+  },
+  {
+    "id": 3,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which of the following cable types is used to connect a display?",
+    "options": [
+      "DVI",
+      "RJ45",
+      "SATA",
+      "USB 1.1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DVI (Digital Visual Interface) is a video interface used to connect displays. RJ45 is Ethernet, SATA is storage, USB 1.1 is low-speed data.",
+    "wrongExplanations": {
+      "1": "RJ45 is used for Ethernet networking.",
+      "2": "SATA connects storage drives.",
+      "3": "USB 1.1 is a slow peripheral bus, not primarily for displays (though DisplayPort alt mode exists on later USB)."
+    }
+  },
+  {
+    "id": 4,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which of the following is used to register inputs on a touch-screen monitor?",
+    "options": [
+      "Inverter",
+      "Digitizer",
+      "OLED",
+      "LCD"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The digitizer is the component that detects and converts touch inputs into digital signals. Inverter is for backlight power in older LCDs, OLED/LCD are display technologies.",
+    "wrongExplanations": {
+      "0": "An inverter converts DC to AC for CCFL backlights.",
+      "2": "OLED is a display panel technology, not the touch sensor.",
+      "3": "LCD is the display panel type."
+    }
+  },
+  {
+    "id": 6,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A user's computer displays the wrong time. The user tries turning the computer off and on, but the time is still incorrect. The user then changes the time in the system settings, which fixes it momentarily, but the time is wrong again after a day. Which of the following is most likely causing the issue?",
+    "options": [
+      "Unseated RAM",
+      "Power cable",
+      "CMOS battery",
+      "Video card"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The CMOS battery maintains BIOS/UEFI settings including the real-time clock when the system is powered off. A failing battery causes the clock to reset. RAM, power cable, or video card issues wouldn't specifically affect the persistent time.",
+    "wrongExplanations": {
+      "0": "Unseated RAM typically causes boot failures or crashes, not time drift.",
+      "1": "Power cable issues prevent the system from powering on at all.",
+      "3": "Video card problems affect display output, not the system clock."
+    }
+  },
+  {
+    "id": 7,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A customer uses a previously configured smartphone to interact with a payment terminal to purchase an item. Which of the following technologies is the smartphone using?",
+    "options": [
+      "RFID",
+      "NFC",
+      "802.11",
+      "Bluetooth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "NFC (Near Field Communication) is the technology used for contactless payments like Apple Pay or Google Pay, operating at very short range. RFID is similar but typically one-way; 802.11 is Wi-Fi; Bluetooth is longer range pairing.",
+    "wrongExplanations": {
+      "0": "RFID is often passive and used in tags, not typically bidirectional smartphone payments.",
+      "2": "802.11 is Wi-Fi wireless networking.",
+      "3": "Bluetooth is used for pairing devices, not standard contactless payments."
+    }
+  },
+  {
+    "id": 8,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A user's mobile phone has stopped charging. The technician first inspects the port for dirt or debris. Which of the following steps should the technician perform to diagnose the issue?",
+    "options": [
+      "Restart the phone.",
+      "Restore the phone to factory defaults.",
+      "Try a known-good cable.",
+      "Send the phone to the vendor for replacement.",
+      "Replace the charging port."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After checking for physical obstruction, the next logical step is to isolate whether the cable is the problem by testing with a known-good cable. Restarting or factory reset don't address charging hardware; replacement is premature.",
+    "wrongExplanations": {
+      "0": "Restarting may help software issues but not basic charging failure after port inspection.",
+      "1": "Factory reset is drastic and unlikely to fix a hardware charging problem.",
+      "3": "Sending to vendor is a last resort after isolating the issue.",
+      "4": "Replacing the port should only be done after confirming it's the port, not the cable."
+    }
+  },
+  {
+    "id": 10,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A user brings their laptop to the local IT technician due to slow charging. The technician tries using a different AC adapter, but it does not fix the issue. Which of the following components should the technician replace?",
+    "options": [
+      "Battery",
+      "RAM",
+      "TPM",
+      "Motherboard"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After ruling out the AC adapter, the most likely component for slow charging is a failing battery. RAM, TPM, and motherboard are unrelated to charging speed.",
+    "wrongExplanations": {
+      "1": "RAM affects performance, not charging.",
+      "2": "TPM is a security chip for encryption keys.",
+      "3": "Motherboard failure would cause more severe issues than slow charging."
+    }
+  },
+  {
+    "id": 11,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A workstation's storage LED is continuously lit without any user activity. What does this indicate?",
+    "options": [
+      "The drive is in a power-saving sleep mode",
+      "The system is experiencing high disk activity, possibly due to paging or malware",
+      "The drive firmware is updating automatically",
+      "The SATA cable is loose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A continuously lit activity LED indicates ongoing disk I/O. In the absence of user activity, this often points to background processes like indexing, updates, excessive paging (low RAM), or malware. Sleep mode would extinguish the LED.",
+    "wrongExplanations": {
+      "0": "Sleep mode turns the activity LED off.",
+      "2": "Firmware updates are rare and temporary, not continuous.",
+      "3": "A loose cable typically causes intermittent or no activity, not continuous lighting."
+    }
+  },
+  {
+    "id": 13,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A user complains that their LCD monitor shows persistent images of previously displayed content even when the screen content changes. What is this display defect called?",
+    "options": [
+      "Dead pixel",
+      "Image burn-in (persistence)",
+      "Pixel inversion",
+      "Backlight bleed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Image burn-in (or image persistence) occurs when static content is displayed for long periods, causing temporary or permanent ghosting. Dead pixels are single points, backlight bleed is light leaking from edges.",
+    "wrongExplanations": {
+      "0": "Dead pixels are individual non-functional pixels.",
+      "2": "Pixel inversion is a technique to reduce burn-in, not the defect itself.",
+      "3": "Backlight bleed is uneven lighting, not residual images."
+    }
+  },
+  {
+    "id": 26,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which file system should be used on a USB drive that needs to work on both Windows and macOS and support files larger than 4 GB?",
+    "options": [
+      "FAT32",
+      "NTFS",
+      "exFAT",
+      "ext4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "exFAT supports large files and is natively supported on modern Windows and macOS. FAT32 has a 4 GB file size limit. NTFS is Windows-centric (macOS can read but write support varies). ext4 is Linux-native.",
+    "wrongExplanations": {
+      "0": "FAT32 cannot store files larger than 4 GB.",
+      "1": "NTFS has limited write support on macOS without third-party tools.",
+      "3": "ext4 is not natively supported on Windows or macOS."
+    }
+  },
+  {
+    "id": 30,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "When replacing RAM, what should be used to protect components from electrostatic discharge?",
+    "options": [
+      "An ESD wrist strap and mat",
+      "Rubber gloves",
+      "A plastic bag",
+      "Nothing, as long as the PC is off"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An ESD wrist strap connected to ground (and ideally an anti-static mat) equalizes potential and prevents static discharge that can damage sensitive components. The system should also be unplugged.",
+    "wrongExplanations": {
+      "1": "Rubber gloves can increase static buildup.",
+      "2": "A plastic bag does not dissipate static properly.",
+      "3": "Even powered off, residual charge and body static can damage components."
+    }
+  },
+  {
+    "id": 36,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 37,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 39,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 45,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 46,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 59,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 60,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 62,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 66,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 67,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 71,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 84,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 95,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 97,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 101,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 105,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 109,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 138,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 142,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 143,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 152,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 158,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 160,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 162,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 164,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 166,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 167,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 169,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 175,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 176,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 178,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 180,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 181,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 193,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 195,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 199,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 205,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 207,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 215,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 225,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 226,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 230,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 242,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 243,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 247,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 250,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 254,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 255,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 256,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 259,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 263,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 266,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 267,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 269,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 273,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 280,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 285,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 286,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 297,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 301,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 305,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 309,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 314,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 316,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 318,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 320,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 331,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 332,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 334,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 337,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 342,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 345,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 347,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 348,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 352,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 355,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 368,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 371,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 377,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 380,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 384,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 390,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 400,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 402,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 405,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 408,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 409,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 415,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 418,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 425,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 426,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 427,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 429,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 439,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 440,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 442,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 445,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 448,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 451,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 460,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 464,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 472,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 474,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 478,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 483,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 484,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 491,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 495,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 497,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 505,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 507,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 509,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 514,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 515,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 516,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 527,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 531,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 533,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 540,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 557,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 564,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 580,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 582,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 591,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 593,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 600,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 607,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 609,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 612,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 618,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 626,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 627,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 631,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 636,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 641,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 656,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 665,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 667,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 677,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 683,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 695,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 698,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 702,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 706,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 710,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 711,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 716,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 727,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 732,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 734,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 740,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 745,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 764,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 765,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 766,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 773,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 775,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 792,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 794,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 804,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 805,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 806,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 810,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 812,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 817,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 819,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 826,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 827,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 833,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 835,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 836,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 837,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 839,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 849,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 851,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 853,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 864,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 868,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 872,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 875,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 881,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 884,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 888,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 890,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 894,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 896,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 897,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 904,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 906,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 912,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 919,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 921,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 922,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 928,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 932,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 933,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 934,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 936,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 937,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 940,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 943,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 946,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 948,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 952,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 956,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 959,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What is the maximum length for a USB 2.0 cable before signal degradation becomes an issue?",
+    "options": [
+      "1 meter",
+      "5 meters",
+      "10 meters",
+      "15 meters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is 5 meters. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "1 meter is not the appropriate choice in this context.",
+      "2": "10 meters is not the appropriate choice in this context.",
+      "3": "15 meters is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 961,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 964,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 969,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 975,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 978,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What does POST stand for in the boot process?",
+    "options": [
+      "Power On Self Test",
+      "Peripheral Output Status Test",
+      "Primary Operating System Test",
+      "Power Optimization Sequence Test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Power On Self Test. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Peripheral Output Status Test is not the appropriate choice in this context.",
+      "2": "Primary Operating System Test is not the appropriate choice in this context.",
+      "3": "Power Optimization Sequence Test is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 984,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 985,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What storage interface is commonly used for SSDs in modern laptops?",
+    "options": [
+      "SATA",
+      "NVMe",
+      "IDE",
+      "SCSI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is NVMe. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "SATA is not the appropriate choice in this context.",
+      "2": "IDE is not the appropriate choice in this context.",
+      "3": "SCSI is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 988,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What of the following describes the primary function of the Northbridge on a motherboard?",
+    "options": [
+      "Manages high-speed communication between CPU and RAM/GPU",
+      "Handles USB and audio",
+      "Controls power distribution",
+      "Stores BIOS settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The correct answer is Manages high-speed communication between CPU and RAM/GPU. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "1": "Handles USB and audio is not the appropriate choice in this context.",
+      "2": "Controls power distribution is not the appropriate choice in this context.",
+      "3": "Stores BIOS settings is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 994,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "What type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 995,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which type of RAM is non-volatile and used for BIOS settings?",
+    "options": [
+      "DRAM",
+      "SRAM",
+      "CMOS",
+      "GDDR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct answer is CMOS. This aligns with CompTIA A+ objectives for Hardware.",
+    "wrongExplanations": {
+      "0": "DRAM is not the appropriate choice in this context.",
+      "1": "SRAM is not the appropriate choice in this context.",
+      "3": "GDDR is not the appropriate choice in this context."
+    }
+  },
+  {
+    "id": 1001,
+    "type": "dragdrop",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1002,
+    "type": "dragdrop",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1004,
+    "type": "dragdrop",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1005,
+    "type": "dragdrop",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1008,
+    "type": "dragdrop",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1009,
+    "type": "dragdrop",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  },
+  {
+    "id": 1010,
+    "type": "dragdrop",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Order the steps for troubleshooting a no-display issue:",
+    "items": [
+      "Check power cables",
+      "Verify monitor input",
+      "Test with known-good monitor",
+      "Reseat RAM/GPU"
+    ],
+    "targets": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+    ],
+    "correctMapping": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Standard troubleshooting order: power, input selection, known-good component, then internal reseating."
+  }
+]
