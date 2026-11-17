@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#1a1a2e">
+  <title>CompTIA A+ Study Quiz</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>CompTIA A+ Study Quiz</h1>
+      <p class="subtitle">Core 1 & Core 2 • Hardware • Networking • OS • Security</p>
+    </header>
+
+    <nav id="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="Hardware">Hardware</button>
+      <button data-filter="Networking">Networking</button>
+      <button data-filter="Operating Systems">OS</button>
+      <button data-filter="Security">Security</button>
+      <button data-filter="1">Core 1</button>
+      <button data-filter="2">Core 2</button>
+    </nav>
+
+    <div id="stats">
+      <span id="progress">0 / 0</span>
+      <span id="score">Score: 0%</span>
+      <button id="reset">Reset Progress</button>
+    </div>
+
+    <main id="quiz-container">
+      <div id="question-area"></div>
+      <div id="feedback" class="hidden"></div>
+      <div id="actions">
+        <button id="submit" disabled>Submit Answer</button>
+        <button id="next" class="hidden">Next Question</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Practice questions based on public CompTIA A+ sample materials and official exam objectives. Not affiliated with CompTIA. Install as PWA for offline study.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
