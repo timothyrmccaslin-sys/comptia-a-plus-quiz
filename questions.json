@@ -28,5 +28,20 @@
       "1": "Single channel reduces bandwidth compared to dual/quad channel.",
       "2": "Registered memory is buffered and used in servers, not typical gaming desktops."
     }
+  },
+  {
+    "id": 3,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which of the following cable types is used to connect a display?",
+    "options": ["DVI", "RJ45", "SATA", "USB 1.1"],
+    "correct": [0],
+    "explanation": "DVI (Digital Visual Interface) is a video interface used to connect displays. RJ45 is Ethernet, SATA is storage, USB 1.1 is low-speed data.",
+    "wrongExplanations": {
+      "1": "RJ45 is used for Ethernet networking.",
+      "2": "SATA connects storage drives.",
+      "3": "USB 1.1 is a slow peripheral bus, not primarily for displays (though DisplayPort alt mode exists on later USB)."
+    }
   }
 ]
