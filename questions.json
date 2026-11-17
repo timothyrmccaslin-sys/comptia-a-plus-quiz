@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "Which of the following would be the best technology for a device to wirelessly connect to a speaker?",
+    "options": ["Wi-Fi", "NFC", "5G", "Bluetooth"],
+    "correct": [3],
+    "explanation": "Bluetooth is the standard short-range wireless technology designed for connecting peripherals like speakers, headphones, and keyboards. Wi-Fi is for higher bandwidth networking, NFC is for very close proximity data exchange (like payments), and 5G is a cellular standard for wide-area mobile connectivity.",
+    "wrongExplanations": {
+      "0": "Wi-Fi is used for network connectivity, not typically for direct speaker pairing in this context.",
+      "1": "NFC has a range of only a few centimeters and is not suitable for continuous audio streaming.",
+      "2": "5G is a cellular technology for internet connectivity over long distances, not local device pairing."
+    }
+  },
+  {
+    "id": 2,
+    "type": "mcq",
+    "category": "Hardware",
+    "core": "1",
+    "question": "A technician needs to install the appropriate RAM for a performance-intensive gaming desktop computer. Which of the following technologies will the technician most likely select?",
+    "options": ["Non-ECC", "Single channel", "Registered", "DDR5"],
+    "correct": [3],
+    "explanation": "DDR5 is the current generation of high-speed desktop memory offering higher bandwidth and capacity, ideal for gaming. Non-ECC is common but not the differentiator; single channel is slower; Registered (RDIMM) is for servers.",
+    "wrongExplanations": {
+      "0": "Non-ECC is standard for desktops but doesn't specify the speed/generation needed for performance.",
+      "1": "Single channel reduces bandwidth compared to dual/quad channel.",
+      "2": "Registered memory is buffered and used in servers, not typical gaming desktops."
+    }
+  }
+]
